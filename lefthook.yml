@@ -6,7 +6,7 @@
 pre-push:
   commands:
     js-lint:
-      glob: '**/*'
+      glob: "**/*"
       run: pnpm eslint --fix --fix-type problem,suggestion,layout,directive  .
 
 commit-msg:
@@ -14,19 +14,19 @@ commit-msg:
     test-sign-off:
       run: 'test $(grep -c "^Signed-off-by: " {1}) -lt 2'
   scripts:
-    'commitlint.sh':
+    "commitlint.sh":
       runner: bash
 
 pre-commit:
   parallel: true
   commands:
     js-lint:
-      glob: '**/*'
+      glob: "**/*"
       run: pnpm prettier --write . && pnpm eslint .
       stage_fixed: true
 
     js-fmt:
-      glob: '**/*'
+      glob: "**/*"
       run: pnpm prettier --write .
       stage_fixed: true
 
