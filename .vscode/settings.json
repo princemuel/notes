@@ -1,32 +1,37 @@
 {
-	"dotenv.enableAutocloaking": false,
-	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-	"editor.codeActionsOnSave": {
-		"source.fixAll": "explicit",
-		"source.addMissingImports": "explicit",
-		"source.organizeImports": "explicit"
-	},
-	"editor.wordWrap": "bounded",
-	"editor.wordWrapColumn": 96,
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"[svelte]": {
-		"editor.defaultFormatter": "svelte.svelte-vscode"
-	},
-	"eslint.enable": true,
-	"mdx.server.enable": true,
-	"json.validate.enable": true,
-	"npm-intellisense.packageSubfoldersIntellisense": true,
-	"svelte.plugin.svelte.defaultScriptLanguage": "ts",
-	"search.exclude": {
-		"**/.yarn": true,
-		"**/pnpm-lock.yaml": true
-	},
-	"tailwindCSS.emmetCompletions": true,
-	"tailwindCSS.experimental.classRegex": [
-		["([\"'`][^\"'`]*.*?[\"'`])", "[\"'`]([^\"'`]*).*?[\"'`]"]
-	],
-	"tailwindCSS.classAttributes": ["class"],
-	"typescript.enablePromptUseWorkspaceTsdk": true,
-	"typescript.tsdk": "node_modules/typescript/lib",
-	"typescript.preferences.preferTypeOnlyAutoImports": true
+  "dotenv.enableAutocloaking": false,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.addMissingImports": "explicit",
+    "source.organizeImports": "explicit",
+    "source.removeUnusedImports": "explicit"
+  },
+  "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 96,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "eslint.enable": true,
+  "eslint.useFlatConfig": true,
+  "eslint.validate": ["javascript", "typescript", "svelte", "html", "markdown"],
+  "mdx.server.enable": true,
+  "json.validate.enable": true,
+  "npm-intellisense.packageSubfoldersIntellisense": true,
+  "svelte.plugin.svelte.defaultScriptLanguage": "ts",
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/pnpm-lock.yaml": true,
+    "**/node_modules/**": true
+  },
+  "tailwindCSS.classFunctions": ["tv", "cx", "cn", "tw"],
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.experimental.classRegex": [
+    ["([\"'`][^\"'`]*.*?[\"'`])", "[\"'`]([^\"'`]*).*?[\"'`]"]
+  ],
+  "tailwindCSS.classAttributes": ["class"],
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.preferences.preferTypeOnlyAutoImports": true
 }

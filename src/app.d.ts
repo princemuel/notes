@@ -1,5 +1,5 @@
 // for information about these interfaces
-import '@poppanator/sveltekit-svg/dist/svg.d.ts';
+import "@poppanator/sveltekit-svg/dist/svg.d.ts";
 // import 'unplugin-icons/types/svelte';
 // declare global {
 // 	namespace App {
