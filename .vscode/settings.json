@@ -1,37 +1,113 @@
 {
-  "dotenv.enableAutocloaking": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "js/ts.implicitProjectConfig.target": "ESNext",
+  "typescript.experimental.useTsgo": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 120,
+  "editor.inlineSuggest.enabled": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
     "source.addMissingImports": "explicit",
-    "source.organizeImports": "explicit",
-    "source.removeUnusedImports": "explicit"
+    "source.organizeImports.biome": "explicit"
   },
-  "editor.wordWrap": "bounded",
-  "editor.wordWrapColumn": 96,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[svelte]": {
-    "editor.defaultFormatter": "svelte.svelte-vscode"
-  },
-  "eslint.enable": true,
-  "eslint.useFlatConfig": true,
-  "eslint.validate": ["javascript", "typescript", "svelte", "html", "markdown"],
-  "mdx.server.enable": true,
+  "editor.quickSuggestions": { "strings": "on" },
+  "dotenv.enableAutocloaking": false,
   "json.validate.enable": true,
-  "npm-intellisense.packageSubfoldersIntellisense": true,
-  "svelte.plugin.svelte.defaultScriptLanguage": "ts",
-  "search.exclude": {
-    "**/.yarn": true,
-    "**/pnpm-lock.yaml": true,
-    "**/node_modules/**": true
-  },
-  "tailwindCSS.classFunctions": ["tv", "cx", "cn", "tw"],
+  "eslint.enable": true,
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "material-icon-theme.activeIconPack": "react_redux",
+  "markdown.validate.enabled": true,
   "tailwindCSS.emmetCompletions": true,
   "tailwindCSS.experimental.classRegex": [
     ["([\"'`][^\"'`]*.*?[\"'`])", "[\"'`]([^\"'`]*).*?[\"'`]"]
   ],
-  "tailwindCSS.classAttributes": ["class"],
-  "typescript.enablePromptUseWorkspaceTsdk": true,
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "typescript.preferences.preferTypeOnlyAutoImports": true
+  "tailwindCSS.includeLanguages": {
+    "xslt": "html"
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "tailwindCSS.rootFontSize": 16,
+  "template-string-converter.enabled": true,
+  "template-string-converter.convertWithinTemplateString": true,
+  "template-string-converter.convertOutermostQuotes": true,
+  "template-string-converter.autoRemoveTemplateString": true,
+  "template-string-converter.addBracketsToProps": true,
+  "[sql]": {
+    "editor.defaultFormatter": "mtxr.sqltools"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "mads-hartmann.bash-ide-vscode"
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  // Rust Analyzer settings
+  "rust-analyzer.rustc.source": "discover",
+  "rust-analyzer.assist.preferSelf": true,
+  "rust-analyzer.assist.emitMustUse": true,
+  "rust-analyzer.linkedProjects": ["apps/api/Cargo.toml"],
+  // Cargo
+  "rust-analyzer.cargo.features": "all",
+  "rust-analyzer.cargo.targetDir": true,
+  "rust-analyzer.check.command": "clippy",
+  "rust-analyzer.checkOnSave": true,
+  // Auto import and organize imports
+  "rust-analyzer.completion.autoimport.enable": true,
+  "rust-analyzer.imports.group.enable": true,
+  "rust-analyzer.imports.granularity.enforce": true,
+  "rust-analyzer.imports.granularity.group": "module",
+  "rust-analyzer.imports.prefix": "crate",
+  "rust-analyzer.imports.merge.glob": true,
+  "rust-analyzer.imports.prefixExternPrelude": false,
+  "rust-analyzer.imports.preferNoStd": true,
+  "rust-analyzer.imports.preferPrelude": true,
+  // Inlay Hints
+  "rust-analyzer.inlayHints.typeHints.enable": false,
+  "rust-analyzer.inlayHints.chainingHints.enable": false,
+  // Formatting with rustfmt
+  "rust-analyzer.rustfmt.extraArgs": ["+nightly"],
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer",
+    "editor.formatOnSave": true
+  },
+  "rust-analyzer.testExplorer": true,
+  "rust-analyzer.semanticHighlighting.punctuation.enable": true,
+  "workbench.editor.customLabels.patterns": {
+    "**/mod.rs": "${dirname}.rs"
+  },
+  "files.watcherExclude": {
+    "**/routeTree.gen.ts": true
+  },
+  "search.exclude": {
+    "**/routeTree.gen.ts": true,    "**/.yarn": true,
+    "**/pnpm-lock.yaml": true,
+    "**/node_modules/**": true
+  },
+  "files.readonlyInclude": {
+    "**/.cargo/registry/src/**/*.rs": true,
+    "**/.cargo/git/checkouts/**/*.rs": true,
+    "**/lib/rustlib/src/rust/library/**/*.rs": true,
+    "**/routeTree.gen.ts": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[powershell]": {
+    "editor.defaultFormatter": "ms-vscode.powershell"
+  }
 }

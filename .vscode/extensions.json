@@ -1,7 +1,12 @@
 {
   "recommendations": [
-    "arcanis.vscode-zipfs",
+    "bradlc.vscode-tailwindcss",
+    "Vercel.turbo-vsc",
+    "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode"
+    "rust-lang.rust-analyzer",
+    "dotenv.dotenv-vscode",
+    "EditorConfig.EditorConfig",
+    "TypeScriptTeam.native-preview"
   ]
 }

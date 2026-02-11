@@ -1,0 +1,7 @@
+@import "@repo/tailwind-config";
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/noto-serif";
+@import "@fontsource-variable/source-code-pro";
+@custom-variant mini (&:where([data-size~=compact], [data-size~=compact] *));
+@custom-variant aria-asc (&:where([aria-sort=ascending]));
+@custom-variant aria-desc (&:where([aria-sort=descending]));

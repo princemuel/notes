@@ -1,0 +1,15 @@
+{
+  "short_name": "notes",
+  "name": "notes - Smart Personal Finance Management",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
