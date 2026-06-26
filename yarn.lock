@@ -861,10 +861,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@expo-google-fonts/inter@npm:^0.4.2":
+  version: 0.4.2
+  resolution: "@expo-google-fonts/inter@npm:0.4.2"
+  checksum: 10c0/a88e6d1321584055d2fa265861795d55ec04b64d9726ecb60fd11a970252d23a1fd8c1febab7b587eb8ec699071d35c38c591625e44a2826c1e0e18bb1aa1946
+  languageName: node
+  linkType: hard
+
 "@expo-google-fonts/material-symbols@npm:^0.4.1":
   version: 0.4.38
   resolution: "@expo-google-fonts/material-symbols@npm:0.4.38"
   checksum: 10c0/f986fc8fe1f5f1aaf5867a2711d9938ffd606c9b13b598584da81998bd2163339bc052f2b83d940160e87abe895e3f7a4aed65644d61a345d2bed3451f1be9dc
+  languageName: node
+  linkType: hard
+
+"@expo-google-fonts/noto-serif@npm:^0.4.2":
+  version: 0.4.2
+  resolution: "@expo-google-fonts/noto-serif@npm:0.4.2"
+  checksum: 10c0/7441e29adf4377bbe651cf2c22e728434d7a9344d054539ace64e826174bf2c68f4e0a402637405fcb55bcbda5ab59516b29886ab65fa80ee50457a3126c5b8a
+  languageName: node
+  linkType: hard
+
+"@expo-google-fonts/source-code-pro@npm:^0.4.1":
+  version: 0.4.1
+  resolution: "@expo-google-fonts/source-code-pro@npm:0.4.1"
+  checksum: 10c0/344767e3da123416cfd78f2a919e57e1c18e262b0a2ccb82aac9716c3019cfee0cb3654f3924c901d076f00da57f4720b1ba3438d80e6fe43b94ec444a92df10
   languageName: node
   linkType: hard
 
@@ -3543,6 +3564,56 @@ __metadata:
   languageName: node
   linkType: hard
 
+"expo-dev-client@npm:~56.0.20":
+  version: 56.0.20
+  resolution: "expo-dev-client@npm:56.0.20"
+  dependencies:
+    expo-dev-launcher: "npm:~56.0.20"
+    expo-dev-menu: "npm:~56.0.17"
+    expo-dev-menu-interface: "npm:~56.0.0"
+    expo-manifests: "npm:~56.0.4"
+    expo-updates-interface: "npm:~56.0.1"
+  peerDependencies:
+    expo: "*"
+  checksum: 10c0/fdf6d94f4441b034ced2a634dbe2f742358b94658203931c8070044f8996d61928beea35d11e3e0be672ab32baa736d5ab7cc459f46c84d9cd1b1f0e3adce59a
+  languageName: node
+  linkType: hard
+
+"expo-dev-launcher@npm:~56.0.20":
+  version: 56.0.20
+  resolution: "expo-dev-launcher@npm:56.0.20"
+  dependencies:
+    "@expo/schema-utils": "npm:^56.0.0"
+    expo-dev-menu: "npm:~56.0.17"
+    expo-manifests: "npm:~56.0.4"
+  peerDependencies:
+    expo: "*"
+    react-native: "*"
+  checksum: 10c0/eb95488d71d982d0796f3dc368428e11f0faa47d8b7a7921e28afc77fa1a90a4921284f9853d26b913f4c09182a844174a35e99ede898de7b6938759b38f0518
+  languageName: node
+  linkType: hard
+
+"expo-dev-menu-interface@npm:~56.0.0":
+  version: 56.0.1
+  resolution: "expo-dev-menu-interface@npm:56.0.1"
+  peerDependencies:
+    expo: "*"
+  checksum: 10c0/9abdc36845817856c262e52b6f2dfa2f0f1e2585bf32f85320e28e6c436cff298ad3860aac4a5dd4140492b7987105c1b748b88dd4d8eaf7eaa8e5ad373b8f67
+  languageName: node
+  linkType: hard
+
+"expo-dev-menu@npm:~56.0.17":
+  version: 56.0.17
+  resolution: "expo-dev-menu@npm:56.0.17"
+  dependencies:
+    expo-dev-menu-interface: "npm:~56.0.0"
+  peerDependencies:
+    expo: "*"
+    react-native: "*"
+  checksum: 10c0/0fe0cd81af95a89d43e092856806b2b57aa129226ad4a05fcbaa00c620c47274f3830e4b0270a19aae4606e850665b47d87095c36ccee5d3e533bb4e278febd2
+  languageName: node
+  linkType: hard
+
 "expo-device@npm:~56.0.4":
   version: 56.0.4
   resolution: "expo-device@npm:56.0.4"
@@ -3605,6 +3676,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"expo-json-utils@npm:~56.0.0":
+  version: 56.0.0
+  resolution: "expo-json-utils@npm:56.0.0"
+  checksum: 10c0/c4620d9b967877e1c44c79a8718f5fe709b260252780e0a8411fd6f9877928dca21ee6c53f595fcbc66f4b4e3bc699a2359c99bb8282ccc9722cf8f096a9a307
+  languageName: node
+  linkType: hard
+
 "expo-keep-awake@npm:~56.0.3":
   version: 56.0.3
   resolution: "expo-keep-awake@npm:56.0.3"
@@ -3625,6 +3703,17 @@ __metadata:
     react: "*"
     react-native: "*"
   checksum: 10c0/d623deb203407492c7c8380a2472a4ce54803846a793cdb15915a9f59e170e714a5348d326851eb3c3c904c91e706110b1e9fdea07f2e4292826de8106921981
+  languageName: node
+  linkType: hard
+
+"expo-manifests@npm:~56.0.4":
+  version: 56.0.4
+  resolution: "expo-manifests@npm:56.0.4"
+  dependencies:
+    expo-json-utils: "npm:~56.0.0"
+  peerDependencies:
+    expo: "*"
+  checksum: 10c0/5ba98148a759d98059bd30f4551eba8ed97a74e8461e7d47ea6f1d9d614666c1fd531a71a521c7dc413c5da2162530c0a93afc2d31900b7011ff3cf2e2c39c32
   languageName: node
   linkType: hard
 
@@ -3795,6 +3884,15 @@ __metadata:
     react-native-web:
       optional: true
   checksum: 10c0/77c1982b6c32bbdf4170d790a014ec97b808b385e6f1a8ea2ac3cb4ff7535030fab358a2f148c3457f14a431e15f38c16a656a155ae8f28bcad2fdaa0cdc1e10
+  languageName: node
+  linkType: hard
+
+"expo-updates-interface@npm:~56.0.1":
+  version: 56.0.2
+  resolution: "expo-updates-interface@npm:56.0.2"
+  peerDependencies:
+    expo: "*"
+  checksum: 10c0/9200d11a5affb568b6d39fe500578e9d38a2164d05fef3bc8a6ec1ff7393fe416ec62596d4d46677406e9f20c6b5e660b8fa85015b09d6695c0d3bd87187f360
   languageName: node
   linkType: hard
 
@@ -4394,102 +4492,92 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lightningcss-android-arm64@npm:1.32.0":
-  version: 1.32.0
-  resolution: "lightningcss-android-arm64@npm:1.32.0"
-  conditions: os=android & cpu=arm64
-  languageName: node
-  linkType: hard
-
-"lightningcss-darwin-arm64@npm:1.32.0":
-  version: 1.32.0
-  resolution: "lightningcss-darwin-arm64@npm:1.32.0"
+"lightningcss-darwin-arm64@npm:1.30.1":
+  version: 1.30.1
+  resolution: "lightningcss-darwin-arm64@npm:1.30.1"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"lightningcss-darwin-x64@npm:1.32.0":
-  version: 1.32.0
-  resolution: "lightningcss-darwin-x64@npm:1.32.0"
+"lightningcss-darwin-x64@npm:1.30.1":
+  version: 1.30.1
+  resolution: "lightningcss-darwin-x64@npm:1.30.1"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"lightningcss-freebsd-x64@npm:1.32.0":
-  version: 1.32.0
-  resolution: "lightningcss-freebsd-x64@npm:1.32.0"
+"lightningcss-freebsd-x64@npm:1.30.1":
+  version: 1.30.1
+  resolution: "lightningcss-freebsd-x64@npm:1.30.1"
   conditions: os=freebsd & cpu=x64
   languageName: node
   linkType: hard
 
-"lightningcss-linux-arm-gnueabihf@npm:1.32.0":
-  version: 1.32.0
-  resolution: "lightningcss-linux-arm-gnueabihf@npm:1.32.0"
+"lightningcss-linux-arm-gnueabihf@npm:1.30.1":
+  version: 1.30.1
+  resolution: "lightningcss-linux-arm-gnueabihf@npm:1.30.1"
   conditions: os=linux & cpu=arm
   languageName: node
   linkType: hard
 
-"lightningcss-linux-arm64-gnu@npm:1.32.0":
-  version: 1.32.0
-  resolution: "lightningcss-linux-arm64-gnu@npm:1.32.0"
+"lightningcss-linux-arm64-gnu@npm:1.30.1":
+  version: 1.30.1
+  resolution: "lightningcss-linux-arm64-gnu@npm:1.30.1"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"lightningcss-linux-arm64-musl@npm:1.32.0":
-  version: 1.32.0
-  resolution: "lightningcss-linux-arm64-musl@npm:1.32.0"
+"lightningcss-linux-arm64-musl@npm:1.30.1":
+  version: 1.30.1
+  resolution: "lightningcss-linux-arm64-musl@npm:1.30.1"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"lightningcss-linux-x64-gnu@npm:1.32.0":
-  version: 1.32.0
-  resolution: "lightningcss-linux-x64-gnu@npm:1.32.0"
+"lightningcss-linux-x64-gnu@npm:1.30.1":
+  version: 1.30.1
+  resolution: "lightningcss-linux-x64-gnu@npm:1.30.1"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"lightningcss-linux-x64-musl@npm:1.32.0":
-  version: 1.32.0
-  resolution: "lightningcss-linux-x64-musl@npm:1.32.0"
+"lightningcss-linux-x64-musl@npm:1.30.1":
+  version: 1.30.1
+  resolution: "lightningcss-linux-x64-musl@npm:1.30.1"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"lightningcss-win32-arm64-msvc@npm:1.32.0":
-  version: 1.32.0
-  resolution: "lightningcss-win32-arm64-msvc@npm:1.32.0"
+"lightningcss-win32-arm64-msvc@npm:1.30.1":
+  version: 1.30.1
+  resolution: "lightningcss-win32-arm64-msvc@npm:1.30.1"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"lightningcss-win32-x64-msvc@npm:1.32.0":
-  version: 1.32.0
-  resolution: "lightningcss-win32-x64-msvc@npm:1.32.0"
+"lightningcss-win32-x64-msvc@npm:1.30.1":
+  version: 1.30.1
+  resolution: "lightningcss-win32-x64-msvc@npm:1.30.1"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
-"lightningcss@npm:1.32.0, lightningcss@npm:^1.30.1":
-  version: 1.32.0
-  resolution: "lightningcss@npm:1.32.0"
+"lightningcss@npm:1.30.1":
+  version: 1.30.1
+  resolution: "lightningcss@npm:1.30.1"
   dependencies:
     detect-libc: "npm:^2.0.3"
-    lightningcss-android-arm64: "npm:1.32.0"
-    lightningcss-darwin-arm64: "npm:1.32.0"
-    lightningcss-darwin-x64: "npm:1.32.0"
-    lightningcss-freebsd-x64: "npm:1.32.0"
-    lightningcss-linux-arm-gnueabihf: "npm:1.32.0"
-    lightningcss-linux-arm64-gnu: "npm:1.32.0"
-    lightningcss-linux-arm64-musl: "npm:1.32.0"
-    lightningcss-linux-x64-gnu: "npm:1.32.0"
-    lightningcss-linux-x64-musl: "npm:1.32.0"
-    lightningcss-win32-arm64-msvc: "npm:1.32.0"
-    lightningcss-win32-x64-msvc: "npm:1.32.0"
+    lightningcss-darwin-arm64: "npm:1.30.1"
+    lightningcss-darwin-x64: "npm:1.30.1"
+    lightningcss-freebsd-x64: "npm:1.30.1"
+    lightningcss-linux-arm-gnueabihf: "npm:1.30.1"
+    lightningcss-linux-arm64-gnu: "npm:1.30.1"
+    lightningcss-linux-arm64-musl: "npm:1.30.1"
+    lightningcss-linux-x64-gnu: "npm:1.30.1"
+    lightningcss-linux-x64-musl: "npm:1.30.1"
+    lightningcss-win32-arm64-msvc: "npm:1.30.1"
+    lightningcss-win32-x64-msvc: "npm:1.30.1"
   dependenciesMeta:
-    lightningcss-android-arm64:
-      optional: true
     lightningcss-darwin-arm64:
       optional: true
     lightningcss-darwin-x64:
@@ -4510,7 +4598,7 @@ __metadata:
       optional: true
     lightningcss-win32-x64-msvc:
       optional: true
-  checksum: 10c0/70945bd55097af46fc9fab7f5ed09cd5869d85940a2acab7ee06d0117004a1d68155708a2d462531cea2fc3c67aefc9333a7068c80b0b78dd404c16838809e03
+  checksum: 10c0/1e1ad908f3c68bf39d964a6735435a8dd5474fb2765076732d64a7b6aa2af1f084da65a9462443a9adfebf7dcfb02fb532fce1d78697f2a9de29c8f40f09aee3
   languageName: node
   linkType: hard
 
@@ -5033,12 +5121,16 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "notes@workspace:."
   dependencies:
+    "@expo-google-fonts/inter": "npm:^0.4.2"
+    "@expo-google-fonts/noto-serif": "npm:^0.4.2"
+    "@expo-google-fonts/source-code-pro": "npm:^0.4.1"
     "@expo/ui": "npm:~56.0.18"
     "@tailwindcss/postcss": "npm:^4.3.1"
     "@total-typescript/ts-reset": "npm:^0.6.1"
     "@types/react": "npm:~19.2.2"
     expo: "npm:~56.0.12"
     expo-constants: "npm:~56.0.18"
+    expo-dev-client: "npm:~56.0.20"
     expo-device: "npm:~56.0.4"
     expo-font: "npm:~56.0.7"
     expo-glass-effect: "npm:~56.0.4"

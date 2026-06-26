@@ -9,7 +9,7 @@ export default defineConfig({
   attributeGroups: ["^class$", "^(id|name)$", "$DEFAULT", "^aria-"],
   sortImports: true,
   sortTailwindcss: {
-    stylesheet: "./app/global.css",
+    stylesheet: "./src/global.css",
     functions: ["clsx", "cn", "cva", "tw", "tv"],
     attributes: ["tw"],
   },

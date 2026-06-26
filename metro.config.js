@@ -1,0 +1,12 @@
+// Learn more https://docs.expo.io/guides/customizing-metro
+const { getDefaultConfig } = require("expo/metro-config");
+const { withNativewind } = require("nativewind/metro");
+/**
+ * Metro configuration
+ * https://metrobundler.dev/docs/configuration
+ *
+ * @type {import('metro-config').MetroConfig}
+ */
+const config = getDefaultConfig(__dirname);
+
+module.exports = withNativewind(config);

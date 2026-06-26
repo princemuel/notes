@@ -1,11 +1,24 @@
 {
   "name": "notes",
-  "main": "expo-router/entry",
   "version": "1.0.0",
+  "private": true,
+  "main": "expo-router/entry",
+  "scripts": {
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "lint": "expo lint",
+    "reset-project": "node ./scripts/reset-project.js",
+    "start": "expo start",
+    "web": "expo start --web"
+  },
   "dependencies": {
+    "@expo-google-fonts/inter": "^0.4.2",
+    "@expo-google-fonts/noto-serif": "^0.4.2",
+    "@expo-google-fonts/source-code-pro": "^0.4.1",
     "@expo/ui": "~56.0.18",
     "expo": "~56.0.12",
     "expo-constants": "~56.0.18",
+    "expo-dev-client": "~56.0.20",
     "expo-device": "~56.0.4",
     "expo-font": "~56.0.7",
     "expo-glass-effect": "~56.0.4",
@@ -40,14 +53,8 @@
     "tailwindcss": "^4.3.1",
     "typescript": "~6.0.3"
   },
-  "scripts": {
-    "start": "expo start",
-    "reset-project": "node ./scripts/reset-project.js",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
-    "lint": "expo lint"
+  "resolutions": {
+    "lightningcss": "1.30.1"
   },
-  "private": true,
   "packageManager": "yarn@4.17.0+sha512.c2957de2f9025ab14d63b24d0d8be1f1655810e22c341042c27f7ecd017b180ec12db73d69ac366d71b304ef9f069349ce462de96f04f8f1da317f4f762c95ae"
 }
