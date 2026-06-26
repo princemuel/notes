@@ -1,2 +1,0 @@
-CREATE USER kalel WITH PASSWORD 'krypton';
-CREATE DATABASE nnies OWNER kalel;
