@@ -1,16 +1,16 @@
 {
-  "js/ts.experimental.useTsgo": false,
+  "js/ts.experimental.useTsgo": true,
   "js/ts.updateImportsOnFileMove.enabled": "always",
   "js/ts.implicitProjectConfig.target": "ESNext",
-  "js/ts.tsdk.path": "node_modules/typescript/lib",
+  // "js/ts.tsdk.path": "node_modules/typescript/lib",
   "js/ts.preferences.preferTypeOnlyAutoImports": true,
   "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "file",
   "editor.tabSize": 2,
   "editor.wordWrap": "bounded",
   "editor.wordWrapColumn": 120,
-  "editor.inlineSuggest.enabled": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.defaultFormatter": "oxc.oxc-vscode",
   "editor.codeActionsOnSave": {
     "source.addMissingImports": "explicit",
     "source.fixAll": "explicit",
@@ -20,6 +20,7 @@
     "source.removeUnusedImports": "explicit",
     "source.format.oxc": "always"
   },
+
   "json.validate.enable": true,
   "dotenv.enableAutocloaking": false,
   "emmet.includeLanguages": { "typescriptreact": "html" },
@@ -35,8 +36,5 @@
   "files.associations": { "*.css": "tailwindcss" },
   "tailwindCSS.rootFontSize": 16,
   "window.autoDetectColorScheme": true,
-  "workbench.tree.indent": 8,
-  "[sql]": {
-    "editor.defaultFormatter": "bradymholt.pgformatter"
-  }
+  "workbench.tree.indent": 8
 }
