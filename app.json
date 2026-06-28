@@ -49,7 +49,6 @@
             "node_modules/@expo-google-fonts/inter/600SemiBold_Italic/Inter_600SemiBold_Italic.ttf",
             "node_modules/@expo-google-fonts/inter/700Bold/Inter_700Bold.ttf",
             "node_modules/@expo-google-fonts/inter/700Bold_Italic/Inter_700Bold_Italic.ttf",
-
             "node_modules/@expo-google-fonts/noto-serif/400Regular/NotoSerif_400Regular.ttf",
             "node_modules/@expo-google-fonts/noto-serif/400Regular_Italic/NotoSerif_400Regular_Italic.ttf",
             "node_modules/@expo-google-fonts/noto-serif/500Medium/NotoSerif_500Medium.ttf",
@@ -58,7 +57,6 @@
             "node_modules/@expo-google-fonts/noto-serif/600SemiBold_Italic/NotoSerif_600SemiBold_Italic.ttf",
             "node_modules/@expo-google-fonts/noto-serif/700Bold/NotoSerif_700Bold.ttf",
             "node_modules/@expo-google-fonts/noto-serif/700Bold_Italic/NotoSerif_700Bold_Italic.ttf",
-
             "node_modules/@expo-google-fonts/source-code-pro/400Regular/SourceCodePro_400Regular.ttf",
             "node_modules/@expo-google-fonts/source-code-pro/400Regular_Italic/SourceCodePro_400Regular_Italic.ttf",
             "node_modules/@expo-google-fonts/source-code-pro/500Medium/SourceCodePro_500Medium.ttf",
@@ -69,7 +67,8 @@
             "node_modules/@expo-google-fonts/source-code-pro/700Bold_Italic/SourceCodePro_700Bold_Italic.ttf"
           ]
         }
-      ]
+      ],
+      "expo-secure-store"
     ],
     "experiments": {
       "typedRoutes": true,

@@ -12,10 +12,12 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@better-auth/expo": "^1.6.22",
     "@expo-google-fonts/inter": "^0.4.2",
     "@expo-google-fonts/noto-serif": "^0.4.2",
     "@expo-google-fonts/source-code-pro": "^0.4.1",
     "@expo/ui": "~56.0.18",
+    "better-auth": "^1.6.22",
     "expo": "~56.0.12",
     "expo-constants": "~56.0.18",
     "expo-dev-client": "~56.0.20",
@@ -24,7 +26,9 @@
     "expo-glass-effect": "~56.0.4",
     "expo-image": "~56.0.11",
     "expo-linking": "~56.0.14",
+    "expo-network": "~56.0.5",
     "expo-router": "~56.2.11",
+    "expo-secure-store": "~56.0.4",
     "expo-splash-screen": "~56.0.10",
     "expo-status-bar": "~56.0.4",
     "expo-symbols": "~56.0.6",
