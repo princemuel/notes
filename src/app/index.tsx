@@ -1,17 +1,15 @@
-import { StyleSheet, Text, View } from "react-native";
+import { ScrollView } from "@expo/ui";
+import { Text, View } from "react-native";
 
-export default function Index() {
+import db from "@/lib/db.json";
+
+export default function Screen() {
+  console.log(db.notes);
   return (
-    <View style={styles.container}>
-      <Text className="text-xl text-blue-500">Edit src/app/index.tsx to edit this screen.</Text>
-    </View>
+    <ScrollView>
+      <View className="">
+        <Text className="text-xl text-blue-500">React Native 🚀</Text>
+      </View>
+    </ScrollView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});

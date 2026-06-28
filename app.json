@@ -37,7 +37,39 @@
           }
         }
       ],
-      "expo-font"
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "node_modules/@expo-google-fonts/inter/400Regular/Inter_400Regular.ttf",
+            "node_modules/@expo-google-fonts/inter/400Regular_Italic/Inter_400Regular_Italic.ttf",
+            "node_modules/@expo-google-fonts/inter/500Medium/Inter_500Medium.ttf",
+            "node_modules/@expo-google-fonts/inter/500Medium_Italic/Inter_500Medium_Italic.ttf",
+            "node_modules/@expo-google-fonts/inter/600SemiBold/Inter_600SemiBold.ttf",
+            "node_modules/@expo-google-fonts/inter/600SemiBold_Italic/Inter_600SemiBold_Italic.ttf",
+            "node_modules/@expo-google-fonts/inter/700Bold/Inter_700Bold.ttf",
+            "node_modules/@expo-google-fonts/inter/700Bold_Italic/Inter_700Bold_Italic.ttf",
+
+            "node_modules/@expo-google-fonts/noto-serif/400Regular/NotoSerif_400Regular.ttf",
+            "node_modules/@expo-google-fonts/noto-serif/400Regular_Italic/NotoSerif_400Regular_Italic.ttf",
+            "node_modules/@expo-google-fonts/noto-serif/500Medium/NotoSerif_500Medium.ttf",
+            "node_modules/@expo-google-fonts/noto-serif/500Medium_Italic/NotoSerif_500Medium_Italic.ttf",
+            "node_modules/@expo-google-fonts/noto-serif/600SemiBold/NotoSerif_600SemiBold.ttf",
+            "node_modules/@expo-google-fonts/noto-serif/600SemiBold_Italic/NotoSerif_600SemiBold_Italic.ttf",
+            "node_modules/@expo-google-fonts/noto-serif/700Bold/NotoSerif_700Bold.ttf",
+            "node_modules/@expo-google-fonts/noto-serif/700Bold_Italic/NotoSerif_700Bold_Italic.ttf",
+
+            "node_modules/@expo-google-fonts/source-code-pro/400Regular/SourceCodePro_400Regular.ttf",
+            "node_modules/@expo-google-fonts/source-code-pro/400Regular_Italic/SourceCodePro_400Regular_Italic.ttf",
+            "node_modules/@expo-google-fonts/source-code-pro/500Medium/SourceCodePro_500Medium.ttf",
+            "node_modules/@expo-google-fonts/source-code-pro/500Medium_Italic/SourceCodePro_500Medium_Italic.ttf",
+            "node_modules/@expo-google-fonts/source-code-pro/600SemiBold/SourceCodePro_600SemiBold.ttf",
+            "node_modules/@expo-google-fonts/source-code-pro/600SemiBold_Italic/SourceCodePro_600SemiBold_Italic.ttf",
+            "node_modules/@expo-google-fonts/source-code-pro/700Bold/SourceCodePro_700Bold.ttf",
+            "node_modules/@expo-google-fonts/source-code-pro/700Bold_Italic/SourceCodePro_700Bold_Italic.ttf"
+          ]
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true,

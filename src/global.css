@@ -1,4 +1,37 @@
 @import "tailwindcss/theme.css" layer(theme);
-@import "tailwindcss/preflight.css" layer(base);
+/* @import "tailwindcss/preflight.css" layer(base); skipping since its web-only  */
 @import "tailwindcss/utilities.css";
+
 @import "nativewind/theme";
+
+@theme {
+  --text-2xs: 0.625rem;
+  --text-2xs--line-height: 0.875rem;
+
+  --font-sans: "Inter_400Regular";
+  --font-sans-italic: "Inter_400Regular_Italic";
+  --font-sans-medium: "Inter_500Medium";
+  --font-sans-medium-italic: "Inter_500Medium_Italic";
+  --font-sans-semibold: "Inter_600SemiBold";
+  --font-sans-semibold-italic: "Inter_600SemiBold_Italic";
+  --font-sans-bold: "Inter_700Bold";
+  --font-sans-bold-italic: "Inter_700Bold_Italic";
+
+  --font-serif: "NotoSerif_400Regular";
+  --font-serif-italic: "NotoSerif_400Regular_Italic";
+  --font-serif-medium: "NotoSerif_500Medium";
+  --font-serif-medium-italic: "NotoSerif_500Medium_Italic";
+  --font-serif-semibold: "NotoSerif_600SemiBold";
+  --font-serif-semibold-italic: "NotoSerif_600SemiBold_Italic";
+  --font-serif-bold: "NotoSerif_700Bold";
+  --font-serif-bold-italic: "NotoSerif_700Bold_Italic";
+
+  --font-mono: "SourceCodePro_400Regular";
+  --font-mono-italic: "SourceCodePro_400Regular_Italic";
+  --font-mono-medium: "SourceCodePro_500Medium";
+  --font-mono-medium-italic: "SourceCodePro_500Medium_Italic";
+  --font-mono-semibold: "SourceCodePro_600SemiBold";
+  --font-mono-semibold-italic: "SourceCodePro_600SemiBold_Italic";
+  --font-mono-bold: "SourceCodePro_700Bold";
+  --font-mono-bold-italic: "SourceCodePro_700Bold_Italic";
+}
