@@ -4,6 +4,8 @@
   "private": true,
   "main": "expo-router/entry",
   "scripts": {
+    "clean": "git clean -xdf .cache .expo .turbo android ios node_modules",
+    "dev": "expo run:android",
     "android": "expo run:android",
     "ios": "expo run:ios",
     "lint": "expo lint",
@@ -53,6 +55,7 @@
     "@types/react": "~19.2.2",
     "oxfmt": "^0.56.0",
     "oxlint": "^1.71.0",
+    "oxlint-tsgolint": "^0.23.0",
     "postcss": "^8.5.15",
     "tailwindcss": "^4.3.1",
     "typescript": "~6.0.3"

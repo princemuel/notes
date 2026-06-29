@@ -1,0 +1,20 @@
+{
+  "languages": {
+    "TypeScript": {
+      "language_servers": ["tsgo"],
+      "formatter": { "language_server": { "name": "oxfmt" } },
+    },
+    "TSX": {
+      "language_servers": ["tsgo"],
+      "formatter": { "language_server": { "name": "oxfmt" } },
+    },
+    "JavaScript": {
+      "language_servers": ["tsgo"],
+      "formatter": { "language_server": { "name": "oxfmt" } },
+    },
+  },
+  "lsp": {
+    "oxfmt": { "initialization_options": { "settings": { "run": "onSave" } } },
+    "oxlint": { "initialization_options": { "settings": { "run": "onType" } } },
+  },
+}
