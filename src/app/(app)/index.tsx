@@ -1,10 +1,21 @@
 import { ScrollView } from "@expo/ui";
-import { Fragment } from "react";
+import { Fragment, useMemo } from "react";
 import { FlatList, Text, View } from "react-native";
 
 import db from "@/lib/db.json";
 
 export default function Screen() {
+  const intld_fmt = useMemo(
+    () =>
+      new Intl.DateTimeFormat("default", {
+        month: "short",
+        day: "numeric",
+        year: "numeric",
+        timeZone: Temporal.Now.timeZoneId(),
+      }),
+    [],
+  );
+
   return (
     <ScrollView>
       <View className="">
@@ -19,11 +30,7 @@ export default function Screen() {
                   <Text key={tag}>{tag}</Text>
                 ))}
 
-                <Text>
-                  {Temporal.Instant.from(item.created_at)
-                    .toZonedDateTimeISO(Temporal.Now.timeZoneId())
-                    .toLocaleString(undefined, { month: "short", day: "numeric", year: "numeric" })}
-                </Text>
+                <Text>{intld_fmt.format(new Date(item.created_at))}</Text>
               </Fragment>
             );
           }}
