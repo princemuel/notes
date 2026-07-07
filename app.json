@@ -86,6 +86,12 @@
         "projectId": "db882a9f-d408-401f-bbe6-7ad53093d7c6"
       }
     },
-    "owner": "princemuel"
+    "owner": "princemuel",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/db882a9f-d408-401f-bbe6-7ad53093d7c6"
+    }
   }
 }

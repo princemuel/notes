@@ -7,11 +7,11 @@
     "development": {
       "developmentClient": true,
       "distribution": "internal",
-      "android": { "buildType": "apk" },
-      "corepack": true
+      "channel": "development",
+      "android": { "buildType": "apk" }
     },
-    "preview": { "distribution": "internal", "corepack": true },
-    "production": { "autoIncrement": true, "corepack": true }
+    "preview": { "distribution": "internal" },
+    "production": { "autoIncrement": true }
   },
   "submit": { "production": {} }
 }
