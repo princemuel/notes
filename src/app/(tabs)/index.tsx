@@ -11,13 +11,13 @@ export default function Screen() {
         month: "short",
         day: "numeric",
         year: "numeric",
-        timeZone: Temporal.Now.timeZoneId(),
+        timeZone: new Intl.DateTimeFormat().resolvedOptions().timeZone,
       }),
     [],
   );
 
   return (
-    <View className="flex-1">
+    <View className="flex-1 bg-white">
       <FlatList
         className=""
         data={db.notes}

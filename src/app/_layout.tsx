@@ -8,7 +8,7 @@ import "../global.css";
 export default function Layout() {
   return (
     <FontThemeProvider>
-      <Stack />
+      <Stack screenOptions={{ headerShown: false }} />
     </FontThemeProvider>
   );
 }
