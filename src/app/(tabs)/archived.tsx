@@ -1,9 +1,12 @@
+import { styled } from "nativewind";
 import { useMemo } from "react";
 import { FlatList, View } from "react-native";
+import { SafeAreaView as RNSafeAreaView } from "react-native-safe-area-context";
 
 import { Text } from "@/components/text";
 import db from "@/lib/db.json";
 
+const SafeAreaView = styled(RNSafeAreaView);
 export default function Screen() {
   const intld = useMemo(
     () =>
@@ -17,7 +20,7 @@ export default function Screen() {
   );
 
   return (
-    <View className="flex-1 bg-white">
+    <SafeAreaView className="flex-1 bg-white">
       <FlatList
         className=""
         data={db.notes.filter((note) => note.archived)}
@@ -46,6 +49,6 @@ export default function Screen() {
           </View>
         )}
       />
-    </View>
+    </SafeAreaView>
   );
 }
