@@ -7,7 +7,7 @@
     "android": "expo run:android",
     "clean": "git clean -xdf .cache .expo .turbo android ios node_modules",
     "dev": "expo run:android",
-    "eas-build-pre-install": "corepack enable && corepack prepare yarn@4.17.0 --activate",
+    "eas-build-pre-install": "npm i -g corepack && corepack prepare yarn@4.17.0 --activate",
     "ios": "expo run:ios",
     "lint": "expo lint",
     "reset-project": "node ./scripts/reset-project.js",
@@ -47,23 +47,24 @@
     "react-native-reanimated": "4.5.0",
     "react-native-safe-area-context": "~5.7.0",
     "react-native-screens": "4.25.2",
+    "react-native-svg": "15.15.4",
     "react-native-web": "~0.21.0",
     "react-native-worklets": "0.10.0",
     "temporal-polyfill": "^1.0.1"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.3.1",
+    "@tailwindcss/postcss": "^4.3.2",
     "@total-typescript/ts-reset": "^0.6.1",
     "@types/react": "~19.2.2",
-    "oxfmt": "^0.56.0",
-    "oxlint": "^1.71.0",
-    "oxlint-tsgolint": "^0.23.0",
-    "postcss": "^8.5.15",
+    "oxfmt": "^0.58.0",
+    "oxlint": "^1.73.0",
+    "oxlint-tsgolint": "^0.24.0",
+    "postcss": "^8.5.16",
     "tailwindcss": "^4.3.1",
     "typescript": "~6.0.3"
   },
   "resolutions": {
     "lightningcss": "1.30.1"
   },
-  "packageManager": "yarn@4.17.0"
+  "packageManager": "yarn@4.17.1"
 }

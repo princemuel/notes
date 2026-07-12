@@ -33,6 +33,7 @@
   "tailwindCSS.emmetCompletions": true,
   "tailwindCSS.experimental.classRegex": [["([\"'`][^\"'`]*.*?[\"'`])", "[\"'`]([^\"'`]*).*?[\"'`]"]],
   "tailwindCSS.includeLanguages": { "xslt": "html" },
+  "tailwindCSS.classAttributes": ["class", "className", "headerClassName"],
   "files.associations": { "*.css": "tailwindcss" },
   "tailwindCSS.rootFontSize": 16,
   "window.autoDetectColorScheme": true,
