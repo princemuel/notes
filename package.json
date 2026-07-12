@@ -7,7 +7,7 @@
     "android": "expo run:android",
     "clean": "git clean -xdf .cache .expo .turbo android ios node_modules",
     "dev": "expo run:android",
-    "eas-build-pre-install": "npm i -g corepack && corepack prepare yarn@4.17.0 --activate",
+    "eas-build-pre-install": "corepack prepare yarn@4.17.1 --activate --force",
     "ios": "expo run:ios",
     "lint": "expo lint",
     "reset-project": "node ./scripts/reset-project.js",
