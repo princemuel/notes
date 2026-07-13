@@ -2,6 +2,7 @@
   "name": "notes",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "main": "expo-router/entry",
   "scripts": {
     "android": "expo run:android",
@@ -21,6 +22,7 @@
     "@expo-google-fonts/source-code-pro": "^0.4.1",
     "@expo/ui": "~57.0.4",
     "better-auth": "^1.6.22",
+    "clsx": "^2.1.1",
     "expo": "^57.0.4",
     "expo-constants": "~57.0.3",
     "expo-dev-client": "~57.0.5",
@@ -60,6 +62,7 @@
     "oxlint": "^1.73.0",
     "oxlint-tsgolint": "^0.24.0",
     "postcss": "^8.5.16",
+    "react-native-svg-transformer": "^1.5.3",
     "tailwindcss": "^4.3.1",
     "typescript": "~6.0.3"
   },
