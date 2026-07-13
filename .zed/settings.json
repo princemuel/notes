@@ -25,7 +25,14 @@
   },
   "languages": {
     "JavaScript": {
-      "language_servers": ["tsgo", "oxlint", "!vtsls", "!typescript-language-server", "!eslint"],
+      "language_servers": [
+        "tsgo",
+        "oxlint",
+        "!vtsls",
+        "!typescript-language-server",
+        "!eslint",
+        "..."
+      ],
       "format_on_save": "on",
       "prettier": { "allowed": false },
       "formatter": [
@@ -34,7 +41,14 @@
       ]
     },
     "TypeScript": {
-      "language_servers": ["tsgo", "oxlint", "!vtsls", "!typescript-language-server", "!eslint"],
+      "language_servers": [
+        "tsgo",
+        "oxlint",
+        "!vtsls",
+        "!typescript-language-server",
+        "!eslint",
+        "..."
+      ],
       "format_on_save": "on",
       "prettier": { "allowed": false },
       "formatter": [
@@ -43,7 +57,14 @@
       ]
     },
     "TSX": {
-      "language_servers": ["tsgo", "oxlint", "!vtsls", "!typescript-language-server", "!eslint"],
+      "language_servers": [
+        "tsgo",
+        "oxlint",
+        "!vtsls",
+        "!typescript-language-server",
+        "!eslint",
+        "..."
+      ],
       "format_on_save": "on",
       "prettier": { "allowed": false },
       "formatter": [
