@@ -1,5 +1,5 @@
 import { styled } from "nativewind";
-import { useMemo } from "react";
+import { useMemo, Fragment } from "react";
 import { FlatList, View } from "react-native";
 import { SafeAreaView as RNSafeAreaView } from "react-native-safe-area-context";
 
@@ -9,25 +9,21 @@ import db from "@/lib/db.json";
 const SafeAreaView = styled(RNSafeAreaView);
 
 export default function Screen() {
-  const intld = useMemo(
-    () =>
-      new Intl.DateTimeFormat("default", {
-        month: "short",
-        day: "numeric",
-        year: "numeric",
-        timeZone: new Intl.DateTimeFormat().resolvedOptions().timeZone,
-      }),
-    [],
-  );
+  const intld = new Intl.DateTimeFormat("default", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+    timeZone: new Intl.DateTimeFormat().resolvedOptions().timeZone,
+  });
 
   return (
-    <SafeAreaView className="flex-1 bg-white">
+    <SafeAreaView className="flex-1 bg-white px-4">
       <FlatList
-        className=""
+        className="px-4"
         data={db.notes}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
-          <View className="flex flex-col gap-2 divide-x divide-slate-200 rounded-sm p-2">
+          <View className="flex flex-col gap-2 rounded-sm border-b border-slate-200 py-4">
             <Text weight="semibold" className="text-lg text-slate-950">
               {item.title}
             </Text>
@@ -37,7 +33,7 @@ export default function Screen() {
                 <Text
                   key={tag}
                   weight="regular"
-                  className="rounded bg-slate-300 px-1 py-0.5 text-sm text-slate-950"
+                  className="rounded bg-slate-200 px-1 py-0.5 text-xs text-slate-950"
                 >
                   {tag}
                 </Text>
@@ -45,7 +41,7 @@ export default function Screen() {
             </View>
 
             <Text weight="regular" className="text-sm text-slate-700">
-              {intld.format(new Date(item.created_at))}
+              {intld.format(Temporal.Instant.from(item.created_at))}
             </Text>
           </View>
         )}
