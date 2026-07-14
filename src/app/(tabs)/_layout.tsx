@@ -14,8 +14,11 @@ export default function Layout() {
     <Tabs
       screenOptions={{
         headerShown: false,
+        tabBarActiveTintColor: "#4F5EF7", // matches the blue FAB/accent in your mockup
+        tabBarInactiveTintColor: "#8E8E93",
+        tabBarStyle: { backgroundColor: "#FFFFFF", borderTopColor: "#E5E5E5" },
+        tabBarLabelStyle: { fontFamily: "font-sans" },
         tabBarShowLabel: false,
-        tabBarStyle: { position: "fixed", bottom: insets.bottom, width: "100%", paddingBlock: 16 },
       }}
     >
       {tabs.map((tab) => (
@@ -24,7 +27,7 @@ export default function Layout() {
           name={tab.name}
           options={{
             title: tab.title,
-            tabBarIcon: ({ focused }) => <tab.icon className="text-sm" />,
+            tabBarIcon: ({ focused, color }) => <tab.icon width={24} height={24} color={color} />,
           }}
         />
       ))}
