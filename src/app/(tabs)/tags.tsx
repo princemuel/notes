@@ -1,10 +1,10 @@
 import { Link } from "expo-router";
 import { styled } from "nativewind";
 import { useMemo } from "react";
-import { FlatList, View } from "react-native";
+import { FlatList, Pressable, View } from "react-native";
 import { SafeAreaView as RNSafeAreaView } from "react-native-safe-area-context";
 
-import { TagSVG } from "@/assets/icons";
+import { LogoSVG, PlusSVG, TagSVG } from "@/assets/icons";
 import { Text } from "@/components/text";
 import db from "@/lib/db.json";
 import { capitalize } from "@/lib/utils";
@@ -12,25 +12,46 @@ import { capitalize } from "@/lib/utils";
 const SafeAreaView = styled(RNSafeAreaView);
 
 export default function Screen() {
-  const tags = [...new Set(db.notes.flatMap((note) => note.tags.map((tag) => tag.toLocaleLowerCase())))];
+  const tags = [
+    ...new Set(db.notes.flatMap((note) => note.tags.map((t) => t.toLocaleLowerCase()))),
+  ].sort();
+
   return (
-    <SafeAreaView className="flex-1 gap-6 bg-white px-4">
-      <View className="flex flex-col gap-4 px-4">
-        <Text weight="bold" className="text-2xl text-slate-950">
-          Tags
-        </Text>
+    <SafeAreaView className="relative flex-1 gap-6 bg-white px-4">
+      <View className="flex-row items-center justify-between bg-slate-100 px-4 py-4">
+        <LogoSVG />
       </View>
 
-      <View className="">
-        {tags.map((tag) => (
-          <Link key={tag} href={`/tags/${tag}`} className="flex flex-row  py-2 gap-10 border-b border-slate-200">
-            <View>
-              <TagSVG className="" />
-            </View>
-            <Text className="">{capitalize(tag)}</Text>
+      <FlatList
+        data={tags}
+        keyExtractor={(item) => item}
+        contentContainerClassName="px-4 pb-24"
+        ListHeaderComponent={
+          <Text weight="bold" className="mb-3 text-2xl text-slate-950">
+            Tags
+          </Text>
+        }
+        ItemSeparatorComponent={() => <View className="h-px bg-slate-200" />}
+        renderItem={({ item }) => (
+          <Link href={`/tags/${item}`} asChild>
+            <Pressable className="flex-row items-center gap-2 py-3">
+              <TagSVG />
+              <Text weight="medium" className="text- text-slate-800">
+                {capitalize(item)}
+              </Text>
+            </Pressable>
           </Link>
-        ))}
-      </View>
+        )}
+      />
+
+      <Link href={"/"} asChild>
+        <Pressable
+          className="absolute right-5 bottom-6 size-14 items-center justify-center rounded-full bg-blue-600 shadow-lg"
+          style={{ elevation: 5 }}
+        >
+          <PlusSVG color="white" />
+        </Pressable>
+      </Link>
     </SafeAreaView>
   );
 }

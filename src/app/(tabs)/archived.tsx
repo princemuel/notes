@@ -48,7 +48,7 @@ export default function Screen() {
             </View>
 
             <Text weight="regular" className="text-sm text-slate-700">
-              {intld.format(Temporal.Instant.from(item.created_at))}
+              {intld.format(Temporal.Instant.from(item.updated_at))}
             </Text>
           </View>
         )}
