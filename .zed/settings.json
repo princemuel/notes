@@ -1,4 +1,6 @@
 {
+  "format_on_save": "on",
+  "prettier": { "allowed": false },
   "lsp": {
     "oxlint": {
       "initialization_options": {
@@ -33,8 +35,6 @@
         "!eslint",
         "..."
       ],
-      "format_on_save": "on",
-      "prettier": { "allowed": false },
       "formatter": [
         { "language_server": { "name": "oxfmt" } },
         { "code_action": "source.fixAll.oxc" }
@@ -49,8 +49,7 @@
         "!eslint",
         "..."
       ],
-      "format_on_save": "on",
-      "prettier": { "allowed": false },
+
       "formatter": [
         { "language_server": { "name": "oxfmt" } },
         { "code_action": "source.fixAll.oxc" }
@@ -65,8 +64,6 @@
         "!eslint",
         "..."
       ],
-      "format_on_save": "on",
-      "prettier": { "allowed": false },
       "formatter": [
         { "language_server": { "name": "oxfmt" } },
         { "code_action": "source.fixAll.oxc" }
@@ -74,39 +71,13 @@
     },
     "CSS": {
       "language_servers": ["tailwindcss-intellisense-css", "!vscode-css-language-server", "..."],
-      "format_on_save": "on",
-      "prettier": { "allowed": false },
       "formatter": [{ "language_server": { "name": "oxfmt" } }]
     },
-    "JSON": {
-      "format_on_save": "on",
-      "prettier": { "allowed": false },
-      "formatter": [{ "language_server": { "name": "oxfmt" } }]
-    },
-    "JSONC": {
-      "format_on_save": "on",
-      "prettier": { "allowed": false },
-      "formatter": [{ "language_server": { "name": "oxfmt" } }]
-    },
-    "Markdown": {
-      "format_on_save": "on",
-      "prettier": { "allowed": false },
-      "formatter": [{ "language_server": { "name": "oxfmt" } }]
-    },
-    "Markdown-Inline": {
-      "format_on_save": "on",
-      "prettier": { "allowed": false },
-      "formatter": [{ "language_server": { "name": "oxfmt" } }]
-    },
-    "MDX": {
-      "format_on_save": "on",
-      "prettier": { "allowed": false },
-      "formatter": [{ "language_server": { "name": "oxfmt" } }]
-    },
-    "YAML": {
-      "format_on_save": "on",
-      "prettier": { "allowed": false },
-      "formatter": [{ "language_server": { "name": "oxfmt" } }]
-    }
+    "JSON": { "formatter": [{ "language_server": { "name": "oxfmt" } }] },
+    "JSONC": { "formatter": [{ "language_server": { "name": "oxfmt" } }] },
+    "Markdown": { "formatter": [{ "language_server": { "name": "oxfmt" } }] },
+    "Markdown-Inline": { "formatter": [{ "language_server": { "name": "oxfmt" } }] },
+    "MDX": { "formatter": [{ "language_server": { "name": "oxfmt" } }] },
+    "YAML": { "formatter": [{ "language_server": { "name": "oxfmt" } }] }
   }
 }
