@@ -1,6 +1,6 @@
 export { default as ArchiveSVG } from "./archive.svg";
-export { default as ArrowLeftSVG } from "./arrow-left.svg";
 export { default as CheckmarkSVG } from "./checkmark.svg";
+export { default as ChevronLeftSVG } from "./chevron-left.svg";
 export { default as ChevronRightSVG } from "./chevron-right.svg";
 export { default as ClockSVG } from "./clock.svg";
 export { default as CrossSVG } from "./cross.svg";
