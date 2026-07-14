@@ -58,6 +58,7 @@
     "@tailwindcss/postcss": "^4.3.2",
     "@total-typescript/ts-reset": "^0.6.1",
     "@types/react": "~19.2.2",
+    "@typescript/native": "npm:typescript@^7.0.2",
     "oxfmt": "^0.58.0",
     "oxlint": "^1.73.0",
     "oxlint-tsgolint": "^0.24.0",
