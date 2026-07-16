@@ -5,7 +5,7 @@
     "oxlint": {
       "initialization_options": {
         "settings": {
-          "configPath": "./oxlint.config.ts",
+          "configPath": "./oxlint.config.mts",
           "run": "onType",
           "disableNestedConfig": false,
           "fixKind": "safe_fix",
@@ -15,7 +15,7 @@
     },
     "oxfmt": {
       "initialization_options": {
-        "settings": { "fmt.configPath": "./oxfmt.config.ts", "run": "onSave" }
+        "settings": { "fmt.configPath": "./oxfmt.config.mts", "run": "onSave" }
       }
     },
     "tailwindcss-language-server": {
