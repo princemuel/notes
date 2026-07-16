@@ -3,7 +3,6 @@ import { defineConfig } from "oxfmt";
 export default defineConfig({
   semi: true,
   singleQuote: false,
-  printWidth: 100,
   tabWidth: 2,
   trailingComma: "all",
   attributeGroups: ["^class$", "^(id|name)$", "$DEFAULT", "^aria-"],

@@ -23,12 +23,13 @@
         "classFunctions": ["cva", "cx", "tv", "clsx", "cn", "tw\\.[a-z-]+"],
         "experimental": { "classRegex": ["[cls|className]\\s\\:\\=\\s\"([^\"]*)"] }
       }
-    }
+    },
+    "typescript-ls": { "settings": { "package_version": "7.0.2" } }
   },
   "languages": {
     "JavaScript": {
       "language_servers": [
-        "tsgo",
+        "typescript-ls",
         "oxlint",
         "!vtsls",
         "!typescript-language-server",
@@ -42,7 +43,7 @@
     },
     "TypeScript": {
       "language_servers": [
-        "tsgo",
+        "typescript-ls",
         "oxlint",
         "!vtsls",
         "!typescript-language-server",
@@ -57,7 +58,7 @@
     },
     "TSX": {
       "language_servers": [
-        "tsgo",
+        "typescript-ls",
         "oxlint",
         "!vtsls",
         "!typescript-language-server",
