@@ -8,8 +8,6 @@ import type { SvgProps } from "react-native-svg";
 import { tabs } from "@/constants/data";
 
 export default function Layout() {
-  const insets = useSafeAreaInsets();
-
   return (
     <Tabs
       screenOptions={{
@@ -27,23 +25,10 @@ export default function Layout() {
           name={tab.name}
           options={{
             title: tab.title,
-            tabBarIcon: ({ focused, color }) => <tab.icon width={24} height={24} color={color} />,
+            tabBarIcon: ({ color }) => <tab.icon width={24} height={24} color={color} />,
           }}
         />
       ))}
     </Tabs>
   );
 }
-
-interface Props {
-  focused: boolean;
-  icon: React.FC<SvgProps>;
-}
-
-const TabIcon = ({ focused, icon }: Props) => {
-  return (
-    <View className="">
-      <View className={clsx("", focused && "")}></View>
-    </View>
-  );
-};

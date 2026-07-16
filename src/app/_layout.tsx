@@ -15,13 +15,6 @@ export default function Layout() {
         <Stack screenOptions={{ headerShown: false }}>
           <Stack.Screen name="(auth)" />
           <Stack.Screen name="(tabs)" />
-          <Stack.Screen
-            name="notes/[slug]"
-            options={{
-              presentation: "card",
-              animation: "slide_from_right",
-            }}
-          />
         </Stack>
       </FontThemeProvider>
     </SafeAreaProvider>

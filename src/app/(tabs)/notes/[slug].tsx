@@ -1,3 +1,4 @@
+import { Header } from "@expo/html-elements";
 import { Link, useLocalSearchParams, useRouter } from "expo-router";
 import { styled } from "nativewind";
 import { Pressable, View, TextInput, ScrollView } from "react-native";
@@ -25,9 +26,9 @@ export default function Screen() {
 
   return (
     <SafeAreaView className="flex-1 bg-white px-4">
-      <View className="bg-slate-100 px-4 py-4">
+      <Header className="bg-slate-100 px-4 py-4">
         <LogoSVG />
-      </View>
+      </Header>
 
       <ScrollView className="flex-1 px-4">
         <View className="flex-row items-center justify-between border-b border-slate-200 py-4">
@@ -77,9 +78,7 @@ export default function Screen() {
 
             <View className="flex flex-2 flex-col gap-4">
               <Text className="text-sm text-slate-700">{item.tags.join(", ")}</Text>
-              <Text className="text-sm text-slate-700">
-                {intld.format(Temporal.Instant.from(item.updated_at))}
-              </Text>
+              <Text className="text-sm text-slate-700">{intld.format(Temporal.Instant.from(item.updated_at))}</Text>
             </View>
           </View>
         </View>

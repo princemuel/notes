@@ -1,4 +1,4 @@
-import { Header } from "@expo/html-elements";
+import { Article, Header } from "@expo/html-elements";
 import { Link } from "expo-router";
 import { styled } from "nativewind";
 import { FlatList, Pressable, View } from "react-native";
@@ -35,7 +35,7 @@ export default function Screen() {
         }
         ItemSeparatorComponent={() => <View className="h-px bg-slate-200" />}
         renderItem={({ item }) => (
-          <View className="flex flex-col gap-2 rounded-sm py-4">
+          <Article className="flex flex-col gap-2 rounded-sm py-4">
             <Link href={`/(tabs)/notes/${item.id}`} asChild>
               <Pressable>
                 <Text weight="semibold" className="text-lg text-slate-950">
@@ -60,7 +60,7 @@ export default function Screen() {
             </View>
 
             <Text className="text-sm text-slate-700">{intld.format(Temporal.Instant.from(item.updated_at))}</Text>
-          </View>
+          </Article>
         )}
       />
 
