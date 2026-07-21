@@ -1,4 +1,4 @@
-import { Article, Header } from "@expo/html-elements";
+import { Article, Header, BR } from "@expo/html-elements";
 import { Link } from "expo-router";
 import { styled } from "nativewind";
 import { FlatList, Pressable, View } from "react-native";
@@ -19,9 +19,9 @@ export default function Screen() {
   });
 
   return (
-    <SafeAreaView className="flex-1 gap-6 bg-white px-4">
-      <Header className="flex-row items-center justify-between bg-slate-100 px-4 py-4">
-        <LogoSVG />
+    <SafeAreaView className="flex-1 gap-6 bg-white px-4 dark:bg-grey-950">
+      <Header className="bg-grey-100 px-4 py-4 dark:bg-grey-800">
+        <LogoSVG color={"white"} />
       </Header>
 
       <FlatList
@@ -29,16 +29,24 @@ export default function Screen() {
         keyExtractor={(item) => item.id}
         contentContainerClassName="px-4 pb-24"
         ListHeaderComponent={
-          <Text weight="bold" className="mb-2 text-2xl text-slate-950">
+          <Text weight="bold" className="mb-3 text-3xl text-grey-950 dark:text-white">
             All Notes
           </Text>
         }
-        ItemSeparatorComponent={() => <View className="h-px bg-slate-200" />}
+        ItemSeparatorComponent={() => <View className="h-px bg-grey-200 dark:bg-transparent" />}
+        ListEmptyComponent={
+          <View className="rounded-lg border border-grey-200 bg-grey-100 p-2">
+            <Text className="text-base text-grey-950 dark:text-white">You don’t have any notes yet.</Text>
+            <Text className="text-base text-grey-950 dark:text-grey-200">
+              Start a new note to capture your thoughts and ideas.
+            </Text>
+          </View>
+        }
         renderItem={({ item }) => (
           <Article className="flex flex-col gap-2 rounded-sm py-4">
-            <Link href={`/(tabs)/notes/${item.id}`} asChild>
+            <Link href={`/notes/${item.id}`} asChild>
               <Pressable>
-                <Text weight="semibold" className="text-lg text-slate-950">
+                <Text weight="semibold" className="text-lg text-grey-950 dark:text-white">
                   {item.title}
                 </Text>
               </Pressable>
@@ -48,9 +56,9 @@ export default function Screen() {
               {item.tags.map((tag) => {
                 const t = tag.toLocaleLowerCase();
                 return (
-                  <Link key={tag} href={`/(tabs)/tags/${t}`} asChild>
-                    <Pressable className="rounded bg-slate-200 px-1 py-0.5">
-                      <Text weight="regular" className="text-xs text-slate-950">
+                  <Link key={tag} href={`/tags/${t}`} asChild>
+                    <Pressable className="rounded bg-grey-200 px-2 py-0.5 dark:bg-grey-700">
+                      <Text weight="regular" className="text-sm text-grey-950 dark:text-white">
                         {tag}
                       </Text>
                     </Pressable>
@@ -59,14 +67,16 @@ export default function Screen() {
               })}
             </View>
 
-            <Text className="text-sm text-slate-700">{intld.format(Temporal.Instant.from(item.updated_at))}</Text>
+            <Text className="text-sm text-grey-700 dark:text-grey-200">
+              {intld.format(Temporal.Instant.from(item.updated_at))}
+            </Text>
           </Article>
         )}
       />
 
       <Link href={"/"} asChild>
         <Pressable
-          className="absolute right-6 bottom-6 size-14 items-center justify-center rounded-full bg-blue-600 shadow-lg"
+          className="absolute right-6 bottom-6 size-14 items-center justify-center rounded-full bg-cobalt-500 shadow-lg dark:bg-cobalt-500"
           style={{ elevation: 5 }}
         >
           <PlusSVG color="white" />
