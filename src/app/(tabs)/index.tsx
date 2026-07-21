@@ -50,9 +50,7 @@ export default function Screen() {
                 return (
                   <Link key={tag} href={`/(tabs)/tags/${t}`} asChild>
                     <Pressable className="rounded bg-slate-200 px-1 py-0.5">
-                      <Text weight="regular" className="text-xs text-slate-950">
-                        {tag}
-                      </Text>
+                      <Text className="text-xs text-slate-950">{tag}</Text>
                     </Pressable>
                   </Link>
                 );

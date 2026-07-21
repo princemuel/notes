@@ -1,5 +1,4 @@
 import { styled } from "nativewind";
-import { useMemo } from "react";
 import { FlatList, View } from "react-native";
 import { SafeAreaView as RNSafeAreaView } from "react-native-safe-area-context";
 
@@ -37,11 +36,7 @@ export default function Screen() {
 
             <View className="flex flex-row gap-1">
               {item.tags.map((tag) => (
-                <Text
-                  key={tag}
-                  weight="regular"
-                  className="rounded bg-slate-200 px-1 py-0.5 text-xs text-slate-950"
-                >
+                <Text key={tag} weight="regular" className="rounded bg-slate-200 px-1 py-0.5 text-xs text-slate-950">
                   {tag}
                 </Text>
               ))}

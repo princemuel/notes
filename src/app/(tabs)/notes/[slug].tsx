@@ -11,7 +11,6 @@ import db from "@/lib/db.json";
 const SafeAreaView = styled(RNSafeAreaView);
 
 export default function Screen() {
-  const router = useRouter();
   const { slug } = useLocalSearchParams<{ slug: string }>();
 
   const item = db.notes.find((note) => note.id === slug);
@@ -32,10 +31,12 @@ export default function Screen() {
 
       <ScrollView className="flex-1 px-4">
         <View className="flex-row items-center justify-between border-b border-slate-200 py-4">
-          <Pressable onPress={router.back} className="flex-row items-center gap-1">
-            <ChevronLeftSVG width={16} height={16} color="#45556c" />
-            <Text className="text-base text-slate-600">Go Back</Text>
-          </Pressable>
+          <Link href="/notes" asChild>
+            <Pressable className="flex-row items-center gap-1">
+              <ChevronLeftSVG width={16} height={16} color="#45556c" />
+              <Text className="text-base text-slate-600">Go Back</Text>
+            </Pressable>
+          </Link>
 
           <View className="flex-row items-center gap-4">
             <Pressable>

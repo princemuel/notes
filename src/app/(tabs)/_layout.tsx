@@ -1,22 +1,19 @@
-import { clsx } from "clsx";
 import { Tabs } from "expo-router";
-import type React from "react";
-import { View } from "react-native";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
-import type { SvgProps } from "react-native-svg";
 
 import { tabs } from "@/constants/data";
+import { useThemeColors } from "@/lib/use-theme-colors";
 
 export default function Layout() {
+  const colors = useThemeColors();
+
   return (
     <Tabs
       screenOptions={{
         headerShown: false,
-        tabBarActiveTintColor: "#4F5EF7", // matches the blue FAB/accent in your mockup
-        tabBarInactiveTintColor: "#8E8E93",
-        tabBarStyle: { backgroundColor: "#FFFFFF", borderTopColor: "#E5E5E5" },
+        tabBarActiveTintColor: colors.tabActive,
+        tabBarInactiveTintColor: colors.tabInactive,
+        tabBarStyle: { backgroundColor: colors.tabBarBg, borderTopColor: colors.tabBarBorder },
         tabBarLabelStyle: { fontFamily: "font-sans" },
-        tabBarShowLabel: false,
       }}
     >
       {tabs.map((tab) => (

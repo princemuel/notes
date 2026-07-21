@@ -46,7 +46,7 @@ export default function Screen() {
                 },
               ])}
             >
-              <item.icon height={20} width={20} color="#334155" />
+              <item.icon width={20} height={20} color="#334155" />
               <Text weight="medium" className="text-base text-slate-800">
                 {item.label}
               </Text>
