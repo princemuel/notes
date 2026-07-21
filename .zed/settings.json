@@ -28,47 +28,17 @@
   },
   "languages": {
     "JavaScript": {
-      "language_servers": [
-        "typescript-ls",
-        "oxlint",
-        "!vtsls",
-        "!typescript-language-server",
-        "!eslint",
-        "..."
-      ],
-      "formatter": [
-        { "language_server": { "name": "oxfmt" } },
-        { "code_action": "source.fixAll.oxc" }
-      ]
+      "language_servers": ["typescript-ls", "oxlint", "!vtsls", "!typescript-language-server", "!eslint", "..."],
+      "formatter": [{ "language_server": { "name": "oxfmt" } }, { "code_action": "source.fixAll.oxc" }]
     },
     "TypeScript": {
-      "language_servers": [
-        "typescript-ls",
-        "oxlint",
-        "!vtsls",
-        "!typescript-language-server",
-        "!eslint",
-        "..."
-      ],
+      "language_servers": ["typescript-ls", "oxlint", "!vtsls", "!typescript-language-server", "!eslint", "..."],
 
-      "formatter": [
-        { "language_server": { "name": "oxfmt" } },
-        { "code_action": "source.fixAll.oxc" }
-      ]
+      "formatter": [{ "language_server": { "name": "oxfmt" } }, { "code_action": "source.fixAll.oxc" }]
     },
     "TSX": {
-      "language_servers": [
-        "typescript-ls",
-        "oxlint",
-        "!vtsls",
-        "!typescript-language-server",
-        "!eslint",
-        "..."
-      ],
-      "formatter": [
-        { "language_server": { "name": "oxfmt" } },
-        { "code_action": "source.fixAll.oxc" }
-      ]
+      "language_servers": ["typescript-ls", "oxlint", "!vtsls", "!typescript-language-server", "!eslint", "..."],
+      "formatter": [{ "language_server": { "name": "oxfmt" } }, { "code_action": "source.fixAll.oxc" }]
     },
     "CSS": {
       "language_servers": ["tailwindcss-intellisense-css", "!vscode-css-language-server", "..."],
