@@ -2,7 +2,6 @@
   "js/ts.experimental.useTsgo": true,
   "js/ts.updateImportsOnFileMove.enabled": "always",
   "js/ts.implicitProjectConfig.target": "ESNext",
-  // "js/ts.tsdk.path": "node_modules/typescript/lib",
   "js/ts.preferences.preferTypeOnlyAutoImports": true,
   "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "file",
@@ -20,7 +19,6 @@
     "source.removeUnusedImports": "explicit",
     "source.format.oxc": "always"
   },
-
   "json.validate.enable": true,
   "dotenv.enableAutocloaking": false,
   "emmet.includeLanguages": { "typescriptreact": "html" },
