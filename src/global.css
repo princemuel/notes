@@ -34,4 +34,26 @@
   --font-mono-semibold-italic: "SourceCodePro_600SemiBold_Italic";
   --font-mono-bold: "SourceCodePro_700Bold";
   --font-mono-bold-italic: "SourceCodePro_700Bold_Italic";
+
+  --color-grey-50: #f5f7fa;
+  --color-grey-100: #f3f5f8;
+  --color-grey-200: #e0e4ea;
+  --color-grey-300: #cacfd8;
+  --color-grey-400: #99a0ae;
+  --color-grey-500: #717784;
+  --color-grey-600: #525866;
+  --color-grey-700: #2b303b;
+  --color-grey-800: #232530;
+  --color-grey-900: #191b25;
+  --color-grey-950: #0e121b;
+
+  --color-cobalt-50: #ebf1ff;
+  --color-cobalt-500: #335cff;
+  --color-cobalt-700: #2547d0;
+
+  --color-mint-100: #d1fbe9;
+  --color-mint-500: #21c16b;
+
+  --color-ruby-100: #ffd5d8;
+  --color-ruby-500: #fb3748;
 }

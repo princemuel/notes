@@ -23,10 +23,10 @@ export function RadioOption({ icon: Icon, title, description, selected, onPress 
       </View>
 
       <View className="flex-1 gap-1">
-        <Text weight="medium" className="text-base text-slate-950">
+        <Text weight="medium" className="text-base text-grey-950 dark:text-white">
           {title}
         </Text>
-        <Text className="text-sm text-slate-800">{description}</Text>
+        <Text className="text-sm text-grey-800">{description}</Text>
       </View>
       <View className={s.check()} />
     </Pressable>
@@ -36,13 +36,13 @@ export function RadioOption({ icon: Icon, title, description, selected, onPress 
 const option = tv({
   slots: {
     row: "flex-row items-center gap-3 rounded-xl border p-4",
-    iconTile: "h-10 w-10 items-center justify-center rounded-lg border border-slate-200 bg-white",
+    iconTile: "h-10 w-10 items-center justify-center rounded-lg border border-grey-200 bg-white",
     check: "h-5 w-5 items-center justify-center rounded-full border-2",
   },
   variants: {
     selected: {
-      true: { row: "border-slate-200 bg-slate-100", check: "border-4 border-blue-600" },
-      false: { row: "border-slate-200 bg-white", check: "border-slate-300" },
+      true: { row: "border-grey-200 bg-grey-100", check: "border-cobalt-600 border-4" },
+      false: { row: "border-grey-200 bg-white", check: "border-grey-300" },
     },
   },
 });

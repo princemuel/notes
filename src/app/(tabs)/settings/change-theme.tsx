@@ -38,8 +38,8 @@ export default function Screen() {
   }
 
   return (
-    <SafeAreaView className="flex-1 gap-6 bg-white px-4 dark:bg-slate-950">
-      <Header className="flex-row items-center justify-between bg-slate-100 px-4 py-4">
+    <SafeAreaView className="flex-1 gap-6 bg-white px-4 dark:bg-grey-950">
+      <Header className="flex-row items-center justify-between bg-grey-100 px-4 py-4">
         <LogoSVG />
       </Header>
 
@@ -47,11 +47,11 @@ export default function Screen() {
         <Link href="/settings" asChild>
           <Pressable className="flex-row items-center gap-1">
             <ChevronLeftSVG width={16} height={16} color="#45556c" />
-            <Text className="text-base text-slate-600">Settings</Text>
+            <Text className="text-base text-grey-600">Settings</Text>
           </Pressable>
         </Link>
 
-        <Text weight="bold" className="text-3xl text-slate-950">
+        <Text weight="bold" className="text-3xl text-grey-950">
           Color Theme
         </Text>
 
@@ -72,7 +72,7 @@ export default function Screen() {
       </View>
 
       <View className="px-4">
-        <Pressable onPress={applyChanges} className="ml-auto rounded-lg bg-blue-600 px-4 py-3 dark:bg-blue-500">
+        <Pressable onPress={applyChanges} className="ml-auto rounded-lg bg-cobalt-500 px-4 py-3">
           <Text weight="medium" className="text-base text-white">
             Apply Changes
           </Text>

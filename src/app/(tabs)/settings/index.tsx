@@ -22,8 +22,8 @@ const SafeAreaView = styled(RNSafeAreaView);
 
 export default function Screen() {
   return (
-    <SafeAreaView className="flex-1 gap-6 bg-white px-4 dark:bg-slate-950">
-      <Header className="flex-row items-center justify-between bg-slate-100 px-4 py-4">
+    <SafeAreaView className="flex-1 gap-6 bg-white px-4 dark:bg-grey-950">
+      <Header className="flex-row items-center justify-between bg-grey-100 px-4 py-4">
         <LogoSVG />
       </Header>
 
@@ -32,7 +32,7 @@ export default function Screen() {
         keyExtractor={(item) => item.label}
         contentContainerClassName="px-4 pb-24"
         ListHeaderComponent={
-          <Text weight="bold" className="mb-3 text-2xl text-slate-950">
+          <Text weight="bold" className="mb-3 text-2xl text-grey-950">
             Settings
           </Text>
         }
@@ -42,12 +42,12 @@ export default function Screen() {
               className={tw([
                 "flex-row items-center gap-2 py-3",
                 {
-                  "border-t border-slate-200 dark:border-slate-800": index === ROWS.length - 1,
+                  "border-t border-grey-200 dark:border-grey-800": index === ROWS.length - 1,
                 },
               ])}
             >
               <item.icon width={20} height={20} color="#334155" />
-              <Text weight="medium" className="text-base text-slate-800">
+              <Text weight="medium" className="text-base text-grey-800">
                 {item.label}
               </Text>
             </Pressable>
